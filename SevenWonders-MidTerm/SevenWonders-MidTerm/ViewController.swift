@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self)?.first as! TableViewCell
         
         cell.imageContainer.image = UIImage(named: arr[indexPath.row])
-        cell.lblImage?.text = arr[indexPath.row]
+        cell.lblImage?.text = "\(arr[indexPath.row]), \(country[indexPath.row])"
         return cell
     }
     
